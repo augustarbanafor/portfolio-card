@@ -75,7 +75,6 @@
     font-size: 15px;
     position: relative;
     bottom: 1rem;
-
 }
 .additional-info {
     transform: translateY(-10px);
@@ -109,4 +108,33 @@ button {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 14px;
     text-align: center;
+}
+
+@media screen and(max-width: 700px){
+    .personal-portfolio-container {
+        min-height: 90%;
+    }
+    .personal-portfolio {
+        max-height: 90%;
+    }   
+}
+@media screen and (max-width: 375px) {
+    .personal-portfolio-container {
+        max-width: 375px;
+        height: 95%;
+    }
+    .personal-portfolio {
+        max-height: 90%;
+        width: 95%;
+    }  
+    .figures {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 550;
+        font-size: 14px;
+        position: relative;
+        bottom: 0.8rem;
+    } 
 }
